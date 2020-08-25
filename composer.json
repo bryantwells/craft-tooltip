@@ -1,0 +1,41 @@
+{
+    "name": "bryantwells/tooltip",
+    "description": "Transforms Craft's CP field instructions into a tooltip.",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "tooltip"
+    ],
+    "support": {
+        "docs": "https://github.com/bryantwells/tooltip/blob/master/README.md",
+        "issues": "https://github.com/bryantwells/tooltip/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bryant Wells",
+            "homepage": "github.com/bryantwells"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "bryantwells\\tooltip\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Tooltip",
+        "handle": "tooltip",
+        "developer": "Bryant Wells",
+        "developerUrl": "github.com/bryantwells",
+        "documentationUrl": "https://github.com/bryantwells/tooltip/blob/master/README.md",
+        "changelogUrl": "https://raw.githubusercontent.com/bryantwells/tooltip/master/CHANGELOG.md",
+        "class": "bryantwells\\tooltip\\Tooltip"
+    }
+}

@@ -1,0 +1,45 @@
+/**
+ * Tooltip plugin for Craft CMS 3.x
+ *
+ * Transforms Craft's CP field instructions into a tooltip.
+ *
+ * @link      github.com/bryantwells
+ * @copyright Copyright (c) 2020 Bryant Wells
+ */
+
+.u-hidden--tooltip {
+    display: none;
+}
+
+.Tooltip {
+    position: relative;
+    margin-left: 7px;
+}
+
+.Tooltip-icon {
+    cursor: pointer;
+}
+
+.Tooltip-icon {
+    color: #9aa5b1;
+}
+
+    .Tooltip-icon:hover {
+        color: #606d7b;
+    }
+
+.Tooltip-body {
+    position: absolute;
+    display: none;
+    box-shadow: 0 0 0 1px rgba(205, 216, 228, 0.25), 0 2px 12px rgba(205, 216, 228, 0.5);
+    background-color: #f3f7fc;
+    border-radius: 5px;
+    padding: 12px;
+    width: 300px;
+}
+
+    .Tooltip-icon:hover + .Tooltip-body {
+        display: block;
+        opacity: 1;
+    }
+
