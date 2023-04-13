@@ -18,6 +18,7 @@ class Tooltip {
         this.instructions = this.element.innerHTML;
         this.parent = this.element.closest('.field');
         this.heading = this.parent.querySelector('.heading');
+        this.label = this.heading.querySelector('label') || this.heading.querySelector('legend');
         
         this.tooltip = document.createElement('div');
 
@@ -35,6 +36,6 @@ class Tooltip {
                 <div class="Tooltip-body">${ this.instructions }</div>
             </div>
         `;
-        this.heading.after(this.tooltip);
+        this.label.after(this.tooltip);
     }
 }
